@@ -8,26 +8,29 @@ import (
 	"github.com/PuerkitoBio/goquery"
 )
 
-func GoQueryCandy() {
-	webPage := "http://webcode.me"
+func GoQueryCandy() error {
+	webPage := "https://candystore.zimpler.net/"
 	resp, err := http.Get(webPage)
 
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
 
 	defer resp.Body.Close()
 
 	if resp.StatusCode != 200 {
-		log.Fatalf("failed to fetch data: %d %s", resp.StatusCode, resp.Status)
+		log.Println("failed to fetch data: %d %s", resp.StatusCode, resp.Status)
+		return nil
 	}
 
 	doc, err := goquery.NewDocumentFromReader(resp.Body)
 
 	if err != nil {
-		log.Fatal(err)
+		return err
 	}
 
 	title := doc.Find("title").Text()
 	fmt.Println(title)
+
+	return nil
 }
