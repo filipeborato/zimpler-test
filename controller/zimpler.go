@@ -1,5 +1,7 @@
 package controller
 
+import "zimpler-test/service"
+
 func CandyStore() {
-	return
+	service.GoQueryCandy()
 }

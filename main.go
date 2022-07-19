@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
+import "zimpler-test/controller"
 
 func main() {
-	fmt.Println("dasds")
+	controller.CandyStore()
 }
