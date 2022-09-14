@@ -1,5 +1,7 @@
 # zimpler-test
 
+This project is an example of code extracting data from an HTML table, the parser and a JSON response API.
+
 ### Instalation and Testing
 
 Runing project:
