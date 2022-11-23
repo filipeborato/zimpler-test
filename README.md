@@ -1,6 +1,6 @@
 # zimpler-test
 
-This project is an example of code extracting data from an HTML table, the parser and a JSON response API.
+This project is an example of code extracting data from an HTML table, the parser and sorting an array by name and a JSON response API.
 
 ### Instalation and Testing
 
