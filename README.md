@@ -4,6 +4,11 @@ This project is an example of code extracting data from an HTML table, the parse
 
 ### Instalation and Testing
 
+Go Version on the project was made:
+``
+V1.16
+``
+
 Runing project:
 
 ```
